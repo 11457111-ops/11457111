@@ -1,0 +1,74 @@
+<main>
+
+    <h2>5. 互動任務（導覽設計）</h2>
+    
+    
+    <!-- SugarCube 導覽概念設計 -->
+    
+    <div style="background: #fff3cd; padding: 20px; border-left: 5px solid #ffc107; margin-bottom: 20px;">
+    
+    <h3>📌 實地觀察任務 (SugarCube 任務提示)</h3>
+    
+    <p>「當你走到埤塘南側的木棧道時，請抬頭尋找高聳的枯木。你是否有看到白鷺鷥在此築巢？請按下手機確認鍵以解鎖下一關。」</p>
+    
+    </div>
+    
+    <!-- 互動測驗 JavaScript -->
+    
+    <div style="background: #f1f3f4; padding: 20px; border-radius: 8px;">
+    
+    <h3>文史生態小測驗</h3>
+    
+    <p><strong>問題：白鷺鷥埤塘早期在地理上因為進水特殊，舊稱為什麼埤？</strong></p>
+    
+    
+    <input type="radio" name="quiz" id="q1" value="wrong"> <label for="q1">A) 順水埤</label><br>
+    
+    <input type="radio" name="quiz" id="q2" value="correct"> <label for="q2">B) 倒吊埤</label><br>
+    
+    <input type="radio" name="quiz" id="q3" value="wrong"> <label for="q3">C) 白鷺埤</label><br><br>
+    
+    
+    <button onclick="checkAnswer()">送出答案</button>
+    
+    <!-- 答對後才顯示的隱藏版地景照 -->
+    
+    <div id="hiddenContent" style="display:none; margin-top:20px; text-align:center;">
+    
+    <p style="color:green; font-weight:bold;">🎉 恭喜答對！解鎖【隱藏版地景照：埤塘黃昏倒影】</p>
+    
+    <div style="width:100%; height:200px; background:#2E7D32; color:white; display:flex; justify-content:center; align-items:center; border-radius:8px;">
+    
+    【此處放入白鷺鷥埤塘黃昏空拍美照圖檔】
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <script>
+    
+    function checkAnswer() {
+    
+    var isCorrect = document.getElementById("q2").checked;
+    
+    if(isCorrect) {
+    
+    document.getElementById("hiddenContent").style.display = "block";
+    
+    alert("答對了！隱藏內容已在下方解鎖。");
+    
+    } else {
+    
+    alert("答案錯誤，再試著看一次歷史與文化分頁喔！");
+    
+    }
+    
+    }
+    
+    </script>
+    
+    </main>
+    
+    
